@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2278104598989539855}
   - component: {fileID: 2278104598989539856}
   - component: {fileID: 2278104598989539857}
+  - component: {fileID: -4778330469353300158}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,3 +117,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 3
+  effect: {fileID: 5196213565273030511, guid: f3e9970c97a71114c92a7f641d107a24, type: 3}
+--- !u!114 &-4778330469353300158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2278104598989539852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b14a3ae99d90fc4ea54126064ec5100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 10

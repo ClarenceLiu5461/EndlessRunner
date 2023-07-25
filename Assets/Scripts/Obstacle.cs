@@ -4,6 +4,7 @@ public class Obstacle : MonoBehaviour
 {
     public int damage = 1;
     public float speed;
+    public GameObject effect;
 
     private void Update()
     {
@@ -13,6 +14,7 @@ public class Obstacle : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Instantiate(effect, transform.position, Quaternion.identity);
             //Player takes damage
             other.GetComponent<Player>().health -= damage;
             Debug.Log(other.GetComponent<Player>().health);
